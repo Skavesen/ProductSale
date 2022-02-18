@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProductSale</name>
+    </assembly>
+    <members>
+        <member name="M:ProductSale.Controllers.BuyerController.Get">
+            <remarks>Get all records from the buyer table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.BuyerController.Post(ProductSale.Models.Buyer)">
+            <remarks>Add record to the buyer table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.BuyerController.Delete(System.Int32)">
+            <remarks>Delete record from the buyer table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.BuyerController.Put(ProductSale.Models.Buyer)">
+            <remarks>Change record from the buyer table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.GenerateDBController.Put">
+            <remarks>Generate</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.ProductController.Get">
+            <remarks>Get all records from the Product table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.ProductController.Post(ProductSale.Models.Product)">
+            <remarks>Add record to the Product table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.ProductController.Delete(System.Int32)">
+            <remarks>Delete record from the Product table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.ProductController.Put(ProductSale.Models.Product)">
+            <remarks>Change record from the Product table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.ProvidedProductController.Get">
+            <remarks>Get all records from the ProvidedProduct table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.ProvidedProductController.Post(ProductSale.Models.ProvidedProduct)">
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+            <remarks>
+            Add record to the ProvidedProduct table.
+            
+            Example Value:
+            
+                POST /ProvidedProduct
+                {        
+                  "id_product": "1",
+                  "quantity": "21"        
+                }
+            </remarks>
+        </member>
+        <member name="M:ProductSale.Controllers.ProvidedProductController.Delete(System.Int32)">
+            <remarks>Delete record from the ProvidedProduct table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.ProvidedProductController.Put(ProductSale.Models.ProvidedProduct)">
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+            <remarks>
+            Change record from the ProvidedProduct table.
+            
+            Example Value:
+            
+                Put /ProvidedProduct
+                {        
+                  "id_provided": "1",
+                  "id_product": "1",
+                  "quantity": "21"        
+                }
+            </remarks>
+        </member>
+        <member name="M:ProductSale.Controllers.SaleController.Get">
+            <remarks>Get all records from the Sale table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.SaleController.Post(System.Int32,System.Int32,System.Int32)">
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+            <remarks>
+            Add record to the Sale table.
+            
+            Example Value:
+            
+                POST /Sale{1,2,3}
+                {               
+                }
+            </remarks>
+        </member>
+        <member name="M:ProductSale.Controllers.SaleController.Delete(System.Int32)">
+            <remarks>Delete record from the Sale table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.SaleController.Put(ProductSale.Models.Sale)">
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+            <remarks>
+            Change record from the Sale table.
+            
+            Example Value:
+            
+                Put /Sale
+                {   
+                "id_Sale": 0,
+                "id_Sales_Point": 0,
+                "id_Buyer": 0,
+                "id_Sales_Data": 0
+                }
+            </remarks>
+        </member>
+        <member name="M:ProductSale.Controllers.SalesDataController.Get">
+            <remarks>Get all records from the Sales Data table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.SalesDataController.Post(ProductSale.Models.SalesData)">
+            <remarks>Add record to the SalesData table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.SalesDataController.Delete(System.Int32)">
+            <remarks>Delete record from the SalesData table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.SalesDataController.Put(ProductSale.Models.SalesData)">
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+            <remarks>
+            Change record from the SalesData table.
+            
+            Example Value:
+            
+                Put /SalesData
+                {        
+                  "id_sales_data": "1",
+                  "id_product": "1",
+                  "quantity": "10",
+                  "product_amount": "210"        
+                }
+            </remarks>
+        </member>
+        <member name="M:ProductSale.Controllers.SalesPointController.Get">
+            <remarks>Get all records from the SalesPoint table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.SalesPointController.Post(ProductSale.Models.SalesPoint)">
+            <remarks>Add record to the SalesPoint table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.SalesPointController.Delete(System.Int32)">
+            <remarks>Delete record from the SalesData table</remarks>
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+        </member>
+        <member name="M:ProductSale.Controllers.SalesPointController.Put(ProductSale.Models.SalesPoint)">
+            <response code="200">That's all right</response>
+            <response code="500">Oops! Something went wrong</response>
+            <remarks>
+            Change record from the SalesData table.
+            
+            Example Value:
+            
+                Put /SalesPoint
+                {        
+                  "id_sales_point": 10,
+                  "name": "Продуктовый",
+                  "id_provided": "1"      
+                }
+            </remarks>
+        </member>
+    </members>
+</doc>
